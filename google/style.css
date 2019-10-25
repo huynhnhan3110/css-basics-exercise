@@ -1,0 +1,106 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#header ul {
+    list-style: none;
+    display: flex;
+    margin-right: 10x;
+    margin-top: 6px;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+#header ul li {
+    padding: 8px 12px;
+}
+#header ul li a {
+    color: #444;
+    text-decoration: none;
+}
+#header ul li a:hover, #footer a:hover {
+    text-decoration: underline;
+}
+#header .avatar img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+#content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    
+}
+#content input[type="text"] {
+    height: 40px;
+    border-radius: 20px;
+    box-shadow: none;
+    border: 1px solid rgb(212, 199, 199);
+    width: 600px;
+    outline: none;
+    margin-top: 25px;
+    box-sizing: border-box;
+    padding: 0 15px
+}
+#content input:focus {
+    box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
+    border-color: rgba(223,225,229,0);
+}
+.button-area {
+    margin-top: 19px;
+}
+button[type="submit"] {
+    padding: 5px 10px;
+    background-color: rgb(234, 228, 238);
+    box-shadow: none;
+    font-size: 17px;
+    color: #333;
+    border: 1px solid #e0d8d8;
+    border-radius: 4px;
+}
+button:first-child {
+    margin-right: 15px;
+}
+#footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+#footer .location {
+    background-color: rgb(242, 237, 245);
+    color: #888;
+    padding: 15px 16px;
+}
+#footer .info {
+    background-color:rgb(244, 240, 247);
+    padding: 10px 16px;
+    border-top: 1px solid rgb(223, 216, 216);
+    padding: 0;
+}
+#footer .info:after {
+    display: block;
+    content: '';
+    clear: both;
+}
+#footer .left-bar, .right-bar {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+#footer .left-bar li {
+    float: left;
+    padding: 15px 16px;    
+}
+#footer .right-bar li {
+    float: right;
+    padding: 15px 16px;    
+
+}
+#footer a {
+    color: #444;
+    text-decoration: none;
+}

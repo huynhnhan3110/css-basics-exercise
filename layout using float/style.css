@@ -1,0 +1,43 @@
+.header {
+    height: 200px;
+    background-color: #eee;
+}
+.sidebar {
+    float: left;
+    width: 20%;
+    background-color: #888;
+}
+.rightsidebar {
+    float: right;
+    width: 20%;
+    background-color: yellow;
+}
+.child-right-sidebar {
+    float: right;
+    width: 10%;
+    background-color: red;
+}
+.child-of-child-right {
+    float: right;
+    background-color: green;
+    width: 5%;
+}
+.content {
+    margin-left: 20%;
+    margin-right: 35%;
+    background-color: #777;
+}
+.footer {
+    background-color: #999;
+    height: 200px;
+}
+.wrapper {
+    clear: both;
+    display: block;
+}
+.wrapper:after {
+    display: block;
+    clear: both;
+    content: "";
+    height: 0;
+}
