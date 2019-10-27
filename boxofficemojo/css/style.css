@@ -1,0 +1,147 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: #fff;
+    background-color: #dbdbdb;
+}
+a {
+    text-decoration: none;
+}
+#wrapper {
+    background-color: #ffffff;
+    max-width: 1010px;
+    margin: 0 auto;
+}
+.banner {
+    background-color: #4c4c4a;
+    display: flex;
+    align-items: center;
+}
+.logo {
+    width: 18%;
+    text-align: center;
+}
+.logo img{
+    width: 90px;
+
+    background-size: cover;
+}
+.searchbox {
+    position: relative;
+    height: 40px;
+    padding: 2px;
+    width: 40%;
+    background-color: #fff;
+    border-radius: 5px;
+    margin-left: 100px;
+}
+.searchbox input {
+    line-height: 40px;
+    font-size: 18px;
+    background: none;
+    width: 100%;
+    border: none;
+    position: absolute;
+    outline: none;   
+    padding-left: 10px;
+}
+.icon {
+    font-size: 24px;
+    position: absolute;
+    right: 5px;
+    color: #000;
+    padding: 6px;
+}
+header .item {
+    color: #fcfcfc;
+    font-size: 20px;
+    padding-right: 15px;
+    border-right: 1px solid #fff;
+    font-weight: bold;
+    margin-left: 30px;
+    margin-right: 20px;
+}
+header .item::after { 
+    content: "\25be";
+}
+.social {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    text-align: center;
+    margin-right: 18px;
+}
+.social a {
+    color: #fff;
+    line-height: 40px;
+    font-size: 24px;
+}
+nav {
+    background-color: #0d0d0d;
+}
+nav #main-menu {
+    margin: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+#main-menu li{
+    padding: 20px 30px;
+}
+#main-menu li a{
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+}
+.box-content {
+    margin: 10px 0px;
+}
+.box-content .item {
+    font-size: 17px;
+    padding: 9px 10px;
+    border: 1px solid #1abc9c;
+}
+.item:nth-child(even) {
+    background-color: #f6f6f6;
+}
+.box-content .price {
+    color: gray;
+    float: right;
+}
+.box {
+    width: 340px;
+    border: 1px solid #999;
+    border-radius: 7px;
+    padding: 10px;
+    margin: 20px 8px;
+}
+.box-title {
+    padding-top: 10px;
+}
+.title-heading {
+    color: #000;
+    font-weight: bold;
+}
+.date {
+    text-align: right;
+    color: gray;
+    float: right;
+}
+.date::after {
+    content: "\25be";
+}
+.box-content .item:not(:first-child) {
+    border-top: none;
+}
+.readmore::after {
+    content: '\2192';
+}
+.box-model {
+    display: flex;
+}
+#main {
+    width: 69%;
+}
