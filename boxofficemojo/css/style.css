@@ -144,4 +144,100 @@ nav #main-menu {
 }
 #main {
     width: 69%;
+    padding: 0 8px;
+}
+/* hero img */
+.hero-img {
+    background-image: url(https://via.placeholder.com/850x400);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    align-items: flex-end;
+}
+.hero-img .overlay {
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,138,255,0) 100%);
+}
+.big-post h2 {
+    padding: 10px;
+    FONT-WEIGHT: 100;
+    font-size: 20px;
+    text-align: left;
+    line-height: 28px;
+    margin: 0;
+}
+.big-post-dec {
+    background-color: #d2dfe9;
+}
+.big-post-dec p {
+    color: #333;
+    font-size: 17px;
+    margin: 0;
+    padding: 10px;
+    line-height: 20px;
+}
+.section-title {
+    color: #000;
+}
+.news {
+    margin: 0 8px;
+}
+/*  small post */
+.small-post ul {
+    color: #000;
+    padding-left: 20px;
+}
+.small-post {
+    border-top: 1px solid #b7abab;
+    margin-top: 20px;
+    border-bottom: 2px solid #b7abab;
+    padding-bottom: 15px;
+}
+/* flim box */
+.solo-film {
+    width: 317px;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 10px;
+    border: 1px solid #948282;
+    border-radius: 5px;
+    padding: 10px 0;
+}
+.solo-title {
+    font-size: 20px;
+    text-align: center;
+}
+.solo-detail {
+    display: flex;
+    position: relative;
+}
+.vs-icon {
+    position: absolute;
+    background-color: orange;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    top: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(-75%, -40%);
+    left: 55%;
+}
+.vs-icon span {
+    color: #fff;
+    font-size: 38px;
+    font-weight: bold;
+}
+.front-flim {
+    padding: 0 27px;
+}
+.solo-detail p {
+    color: #000;
+    margin: 0 auto;
+    text-align: center;
+}
+.flim-box {
+    display: flex;
 }
