@@ -50,9 +50,14 @@ a {
 .icon {
     font-size: 24px;
     position: absolute;
-    right: 5px;
-    color: #000;
-    padding: 6px;
+    right: 0;
+    bottom: 0;
+    line-height: 32px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    top: 0;
+    padding: 5px 10px;
+    background-color: orange;
 }
 header .item {
     color: #fcfcfc;
@@ -104,6 +109,13 @@ nav #main-menu {
     padding: 9px 10px;
     border: 1px solid #1abc9c;
 }
+.box-sidebar .item {
+    padding: 0;
+    border: none;
+}
+.box-sidebar .item:nth-child(even) {
+    background: none;
+}
 .item:nth-child(even) {
     background-color: #f6f6f6;
 }
@@ -113,6 +125,12 @@ nav #main-menu {
 }
 .box {
     width: 340px;
+    border: 1px solid #999;
+    border-radius: 7px;
+    padding: 10px;
+    margin: 20px 8px;
+}
+.box-sidebar {
     border: 1px solid #999;
     border-radius: 7px;
     padding: 10px;
@@ -136,6 +154,9 @@ nav #main-menu {
 .box-content .item:not(:first-child) {
     border-top: none;
 }
+.readmore {
+    padding-top: 15px;
+}
 .readmore::after {
     content: '\2192';
 }
@@ -143,8 +164,8 @@ nav #main-menu {
     display: flex;
 }
 #main {
-    width: 69%;
     padding: 0 8px;
+    margin-right: 32%;
 }
 /* hero img */
 .hero-img {
@@ -196,7 +217,7 @@ nav #main-menu {
 }
 /* flim box */
 .solo-film {
-    width: 317px;
+    width: 48%;
     text-align: center;
     margin-top: 20px;
     margin-left: 10px;
@@ -211,6 +232,7 @@ nav #main-menu {
 .solo-detail {
     display: flex;
     position: relative;
+    margin-top: 20px;
 }
 .vs-icon {
     position: absolute;
@@ -240,4 +262,13 @@ nav #main-menu {
 }
 .flim-box {
     display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.showdowns {
+    margin: 0 8px;
+}
+aside {
+    width: 32%;
+    float: right;
 }
