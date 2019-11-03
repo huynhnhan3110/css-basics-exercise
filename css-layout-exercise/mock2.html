@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		body {
+			margin: 0 20px;
+			text-align: center;
+			width: 100%;
+		}
+		.container {
+			width: 100%;
+			margin: 20px 0;
+		}
+		header, .box {
+			border: 3px solid black;
+		}
+		header {
+			height: 100px;
+			background-color: blue;
+		}
+		.box {
+			width: 30%;
+			margin-right: 20px;
+			height: 800px;
+		}
+		.box:last-child {
+			margin-right: 0px;
+		}
+		.left {
+			float: left;
+		}
+		.right {
+			float: right;
+		}
+		.center {
+			margin-left: 30%;
+		}
+		.red {
+			background-color: red;
+		}
+		.green {
+			background-color: green;
+		}
+		.orange {
+			background-color: orange;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<header></header>
+	</div>
+	<div class="container">
+		<div class="box left red"></div>
+		<div class="box right green"></div>
+		<div class="box center orange"></div>
+
+	</div>
+</body>
+</html>
