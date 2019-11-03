@@ -33,3 +33,56 @@ input {
 	font-family: "Lato", sans-serif;
 }
 /*	my style start from here */
+.wrapper {
+	max-width: 1600px;
+	margin: 0 auto;
+}
+:root {
+	--primary: #64c29e;
+	--heading: #353738;
+	--text: #8d9092;
+	--input-border: #d3d7d9;
+	--input-text: #cdcdcd;
+	--bg-light: #f7f7f7;
+	--bg-dark: #282f35;
+}
+/*	header */
+.header {
+	min-height: 800px;
+	background-image: url(../images/img-bg-header.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	background-position: center;
+	display: flex;
+	justify-content: center;
+}
+.nav {
+	margin-top: 3.5rem;
+}
+.nav__list {
+	display: flex;
+	align-items: center;
+}
+.nav__item {
+	padding-left: 4rem;
+	padding-right: 4rem;
+	position: relative;
+}
+.nav__link {
+	font-size: 1.3rem;
+	font-weight: 700;
+	color: var(--heading);
+	text-decoration: none;
+	text-transform: uppercase;
+	position: relative;
+	display: block;
+}
+.nav__item:last-child:before,
+.nav__item:nth-child(2):before {
+	content: '.';
+	position: absolute;
+	font-size: 2rem;
+	top: -0.6rem;
+	left: 0;
+}
