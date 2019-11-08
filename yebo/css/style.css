@@ -86,3 +86,112 @@ input {
 	top: -0.6rem;
 	left: 0;
 }
+/* feature */
+.feature__header {
+	padding: 11rem 1.5rem 14rem;
+	background-color: var(--bg-light);
+}
+.feature__img-top {
+	margin: 0 auto 3rem;
+}
+.feature__heading {
+	color: var(--heading);
+	font-size: 1.8rem;
+	text-transform: uppercase;
+	margin-bottom: 2rem;
+	font-weight: bold;
+	text-align: center;
+	line-height: 1.6;
+}
+.feature__header-desc {
+	color: var(--text);
+	font-size: 1.8rem;
+	margin: 0 auto;
+	text-align: center;
+	line-height: 1.6;
+	max-width: 106rem;;
+}
+.feature__item {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	height: 60rem;
+	overflow: hidden;
+}
+.feature__item-img {
+	width: 67%;
+	position: relative;
+}
+.feature__item-content {
+	width: 33%;
+
+}
+.feature__item .img__bg {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+.feature__item .img__brand {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 2;
+}
+.feature__item-content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 100%;
+}
+.feature__item-content-top {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 0 7rem;
+	position: relative;
+	background-color: white;
+	height: 67%;
+}
+.feature__item-text {
+	font-size: 1.6rem;
+	line-height: 1.6;
+	color: var(--text);
+	text-align: justify;
+	position: relative;
+	padding-bottom: 3rem;
+}
+.feature__item-content-bottom {
+	height: 33%;
+}
+.feature__item:nth-child(2) .feature__item-img {
+	order: 1;
+}
+.feature__item:last-child .feature__item-img {
+	width: 33%;
+}
+.feature-item:last-child .feature__item-content {
+	width: 34%;
+}
+/* arrow hidden before img */
+.feature__item-content-top:after {
+	content: '';
+	position: absolute;
+	bottom: -2rem;
+	left: 50%;
+	width: 2rem;
+	height: 2rem;
+	background-color: white;
+	z-index: 10;
+	transform: translate(-50%, -50%) rotate(-45deg);
+}
+.feature__item-text:after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translate(-50%);
+	width: 6rem;
+	height: 1px;
+	background-color: var(--bg-light);
+}
